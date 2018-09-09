@@ -33,7 +33,7 @@ public class SmokeTests {
         loginPage.atRequiredPage();
     }
 
-    @Test(groups= "smoke")
+    @Test(groups= "Smoke")
     public void uncheckTheBoxes(){
         logIn();
         dashboardPage.clickIssueButton();
@@ -50,7 +50,7 @@ public class SmokeTests {
     }
 
 
-    @Test(groups= "smoke")
+    @Test(groups= "Smoke")
     public void epmtyResultsIssue() {
         logIn();
         dashboardPage.clickIssueButton();

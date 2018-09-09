@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestSuite">
+
+    <listeners>
+        <listener class-name="tests.ITestListener"/>
+    </listeners>
+
+    <test name="TestOnDependsOnMethods">
+        <groups>
+            <run>
+                <include name="LoginSmoke"/>
+                <include name="smoke"/>
+                <exclude name="LoginRegression"/>
+                <exclude name="Regression"/>
+                <exclude name="Feature"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.SmokeTests"/>
+            <class name="tests.RegressionTests"/>
+        </classes>
+    </test>
+</suite>
